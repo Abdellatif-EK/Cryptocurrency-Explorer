@@ -1,4 +1,3 @@
-
 # Cryptocurrency Explorer
 
 This project is a Next.js application that allows users to explore cryptocurrency market data and trends.
@@ -67,7 +66,106 @@ print_numbers()
 
 Output (for both implementations):
 
-1, 2, Hello, 4, World, Hello, Yoo, 8, Hello, World, 11, Hello, 13, Yoo, HelloWorld, 16, 17, Hello, 19, World, HelloYoo, 22, 23, Hello, World, 26, Hello, Yoo, 29, HelloWorld, 31, 32, Hello, 34, World, Hello, 37, ...
+1
+2
+Hello
+4
+World
+Hello
+Yoo
+8
+Hello
+World
+11
+Hello
+13
+Yoo
+HelloWorld
+16
+17
+Hello
+19
+World
+HelloYoo
+22
+23
+Hello
+World
+26
+Hello
+Yoo
+29
+HelloWorld
+31
+32
+Hello
+34
+WorldYoo
+Hello
+37
+38
+Hello
+World
+41
+HelloYoo
+43
+44
+HelloWorld
+46
+47
+Hello
+Yoo
+World
+Hello
+52
+53
+Hello
+World
+Yoo
+Hello
+58
+59
+HelloWorld
+61
+62
+HelloYoo
+64
+World
+Hello
+67
+68
+Hello
+WorldYoo
+71
+Hello
+73
+74
+HelloWorld
+76
+Yoo
+Hello
+79
+World
+Hello
+82
+83
+HelloYoo
+World
+86
+Hello
+88
+89
+HelloWorld
+Yoo
+92
+Hello
+94
+World
+Hello
+97
+Yoo
+Hello
+World
 
 ## Task 3: Logic
 
@@ -83,19 +181,3 @@ To find your friend's red car on an infinite bidirectional highway in a finite a
 This approach ensures that you will eventually find your friend's car, regardless of which direction it is in or how far away it is. The search pattern covers an ever-expanding area, guaranteeing that you'll reach your friend's location in a finite amount of time.
 
 This method is known as an exponential search or doubling search and is an efficient way to search an unbounded space when you don't know which direction to go.
-
-## Version Control and Code Organization
-
-- Use Git for version control.
-- Create meaningful commit messages.
-- Use feature branches for new features or significant changes.
-- Keep the main branch stable and deployable.
-- Organize your code into logical directories (e.g., components, pages, lib, styles).
-- Use consistent naming conventions for files and components.
-
-## Documentation
-
-- Keep this README.md up to date with any changes to installation or running procedures.
-- Use inline comments for complex logic within your code.
-- Consider using JSDoc comments for functions and components to provide better IDE support and documentation.
-- If your project grows, consider creating a separate documentation site or wiki for more detailed information.
