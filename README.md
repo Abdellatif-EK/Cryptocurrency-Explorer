@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Cryptocurrency Explorer
 
-First, run the development server:
+This project is a Next.js application that allows users to explore cryptocurrency market data and trends.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Installation
+
+To install and run this project, you'll need to have pnpm installed on your system. If you don't have pnpm installed, you can install it by following the instructions on the [official pnpm website](https://pnpm.io/installation).
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/your-username/crypto-market-explorer.git
+   cd crypto-market-explorer
+   ```
+2. Install dependencies:
+
+   ```
+   pnpm install
+   ```
+3. Build the project:
+
+   ```
+   pnpm run build
+   ```
+4. Run the project:
+
+   ```
+   pnpm run start
+   ```
+
+The application should now be running on `http://localhost:3000`.
+
+## Task 2: Algorithmic
+
+Here are implementations of the requested algorithm in JavaScript and Python:
+
+### JavaScript Implementation
+
+```javascript
+function printNumbers() {
+  for (let i = 1; i <= 100; i++) {
+    let output = '';
+    if (i % 3 === 0) output += 'Hello';
+    if (i % 5 === 0) output += 'World';
+    if (i % 7 === 0) output += 'Yoo';
+    console.log(output || i);
+  }
+}
+
+printNumbers();
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Python Implementation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```python
+def print_numbers():
+    for i in range(1, 101):
+        output = ''
+        if i % 3 == 0: output += 'Hello'
+        if i % 5 == 0: output += 'World'
+        if i % 7 == 0: output += 'Yoo'
+        print(output or i)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+print_numbers()
+```
 
-## Learn More
+Output (for both implementations):
 
-To learn more about Next.js, take a look at the following resources:
+1, 2, Hello, 4, World, Hello, Yoo, 8, Hello, World, 11, Hello, 13, Yoo, HelloWorld, 16, 17, Hello, 19, World, HelloYoo, 22, 23, Hello, World, 26, Hello, Yoo, 29, HelloWorld, 31, 32, Hello, 34, World, Hello, 37, ...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Task 3: Logic
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To find your friend's red car on an infinite bidirectional highway in a finite amount of time, you can use an expanding search pattern. Here's the approach:
 
-## Deploy on Vercel
+1. Start at your current position (let's call it point 0).
+2. Drive 1 unit distance to the right, then return to point 0.
+3. Drive 2 units to the left, then return to point 0.
+4. Drive 4 units to the right, then return to point 0.
+5. Drive 8 units to the left, then return to point 0.
+6. Continue this pattern, doubling the distance each time and alternating directions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This approach ensures that you will eventually find your friend's car, regardless of which direction it is in or how far away it is. The search pattern covers an ever-expanding area, guaranteeing that you'll reach your friend's location in a finite amount of time.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This method is known as an exponential search or doubling search and is an efficient way to search an unbounded space when you don't know which direction to go.
+
+## Version Control and Code Organization
+
+- Use Git for version control.
+- Create meaningful commit messages.
+- Use feature branches for new features or significant changes.
+- Keep the main branch stable and deployable.
+- Organize your code into logical directories (e.g., components, pages, lib, styles).
+- Use consistent naming conventions for files and components.
+
+## Documentation
+
+- Keep this README.md up to date with any changes to installation or running procedures.
+- Use inline comments for complex logic within your code.
+- Consider using JSDoc comments for functions and components to provide better IDE support and documentation.
+- If your project grows, consider creating a separate documentation site or wiki for more detailed information.
