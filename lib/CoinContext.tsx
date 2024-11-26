@@ -39,11 +39,11 @@ export const CoinProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setError(null);
       
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
     
       const data = await getCoinsList(
         1,
-        250, // Fetch 250 coins at once
+        250,
         searchField,
         searchTerm,
         { signal: controller.signal }
@@ -53,7 +53,7 @@ export const CoinProvider: React.FC<{ children: React.ReactNode }> = ({ children
     
       setAllCoins(data.coins);
       setTotalCoins(data.totalCoins);
-      setTotalPages(Math.ceil(data.totalCoins / 10)); // Assuming default perPage is 10
+      setTotalPages(Math.ceil(data.totalCoins / 10));
     } catch (error: unknown) {
       console.error('Error fetching coins:', error);
       

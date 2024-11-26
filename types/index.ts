@@ -44,8 +44,7 @@ export interface CoinDetails {
     current_price: { [key: string]: number };
     market_cap: { [key: string]: number };
     fully_diluted_valuation: { [key: string]: number } | null;
-    total_volume:
-{ [key: string]: number };
+    total_volume:{ [key: string]: number };
     price_change_24h_in_currency: { [key: string]: number };
     price_change_percentage_24h: number;
     circulating_supply: number;

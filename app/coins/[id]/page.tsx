@@ -20,7 +20,7 @@ export default async function CoinDetailPage({
 }) {
   const [coin, marketData] = await Promise.all([
     getCoinDetails(params.id),
-    getCoinMarketChart(params.id, 365), // Fetch up to 1 year of data
+    getCoinMarketChart(params.id, 365), 
   ]);
 
   const formatNumber = (value: number | undefined, decimals = 2) => {
@@ -28,11 +28,11 @@ export default async function CoinDetailPage({
   };
 
 const formatLargeNumber = (value: number | null | undefined) => {
-  if (value === null || value === undefined) return 'N/A'; // Handle null and undefined cases
-  if (typeof value !== 'number') return 'N/A'; // Ensure value is a number
+  if (value === null || value === undefined) return 'N/A'; 
+  if (typeof value !== 'number') return 'N/A'; 
   if (value >= 1e9) return `$${(value / 1e9).toFixed(2)}B`;
   if (value >= 1e6) return `$${(value / 1e6).toFixed(2)}M`;
-  return `$${value.toLocaleString()}`; // Format number with locale
+  return `$${value.toLocaleString()}`;
 };
 
   return (
