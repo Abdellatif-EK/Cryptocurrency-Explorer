@@ -11,8 +11,8 @@ import { Button } from "@/components/ui/button";
 
 type FilterOptionsProps = {
   onFilterChange: (filterType: string, filterValue: string) => void;
-  onToggleView: () => void; // Add this
-  isListView: boolean; // Add this
+  onToggleView: () => void;
+  isListView: boolean; 
 };
 
 export default function FilterOptions({
