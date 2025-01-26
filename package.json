@@ -1,8 +1,11 @@
 {
   "name": "crypto-market-explorer",
   "version": "0.1.0",
+  "homepage": "https://abdellatif-ek.github.io/Cryptocurrency-Explorer/",
   "private": true,
   "scripts": {
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -33,6 +36,7 @@
     "@types/react-dom": "^18.2.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "14.2.16",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.0.0"
   }
 }
